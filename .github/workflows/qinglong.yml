@@ -44,10 +44,10 @@ jobs:
           context: ./QingLong
           push: true
           tags: |
-            ghcr.io/${{ steps.lower-repo.outputs.repository }}/qinglong:latest
+            ghcr.io/${{ steps.lower-repo.outputs.repository }}/7L:latest
           labels: |
             org.opencontainers.image.source=https://github.com/${{ github.repository }}
-            org.opencontainers.image.description=QingLong Docker Image
+            org.opencontainers.image.description=7L Docker Image
             org.opencontainers.image.licenses=MIT
           cache-from: type=gha
           cache-to: type=gha,mode=max
